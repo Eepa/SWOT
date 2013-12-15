@@ -1,0 +1,10 @@
+CREATE TABLE -LAUSEET
+====================================
+
+\\Taulu jarjestelman kayttajasta.
+
+CREATE TABLE spofkayttaja (
+	kayttajanimi         VARCHAR(30) NOT NULL UNIQUE,  -- kayttajan kayttajanimi
+	salasana             VARCHAR(30),                  -- kayttajan salasana
+	PRIMARY KEY (kayttajanimi)
+);
