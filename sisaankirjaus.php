@@ -20,35 +20,38 @@ require_once 'tarkastus.php';
         <!--Sisäänkirjautumislomake, johon käyttäjä syöttää tarvittavat tiedot.-->
 
         <div> 
-            <h2>Kirjaudu järjestelmään</h2>
+            <h2>Syötä käyttäjänimesi ja salasanasi:</h2>
 
             <form action="kirjaudu.php?sis" method="POST">
-                <?php if (isset($_GET['epao'])) { ?> 
-                    <p id="virhe">
-                        <?php
-                        echo 'Salasana tai käyttäjätunnus oli väärä';
-                    }
-                    ?> </p>
 
 
-                <p>Syötä tunnuksesi ja salasanasi:</p>
 
                 <fieldset class="kirjautuminenfieldset" id="sisaankirjaus">
 
+                    <?php if (isset($_GET['epao'])) { ?> 
+                        <p id="virhe">
+                            <?php
+                            echo 'Salasana tai käyttäjätunnus oli väärä';
+                        }
+                        ?> </p>
 
-                    <label class="kirjautuminenlabel" for="kayttajanimi">Käyttäjätunnus:</label>
 
-                    <input type="text" name="kayttajanimi" id="kayttajanimi" maxlength="30" required><br>
+                    <table >
+                        <tr>
+                            <td><label class="kirjautuminenlabel" for="kayttajanimi">Käyttäjänimi:</label></td>
+                            <td> <input type="text" name="kayttajanimi" id="kayttajanimi" maxlength="30" required><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><label class="kirjautuminenlabel" for="salasana">Salasana:</label> </td>
+                            <td><input type="password" name="salasana" id="salasana" maxlength="30" required><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><input class="kirjnappula" type="submit" value="Kirjaudu"></td>
+                        </tr>
 
 
-
-                    <label class="kirjautuminenlabel" for="salasana">Salasana:</label> 
-
-                    <input type="password" name="salasana" id="salasana" maxlength="30" required><br>
-
-                    <br>
-
-                    <input class="kirjnappula" type="submit" value="Kirjaudu">
                 </fieldset>
 
             </form>

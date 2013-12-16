@@ -41,13 +41,13 @@ siirtynyt kyseiselle sivulle. Tästä ominaisuudesta vastataan JavaScript-koodin
                         <!--Jos käyttäjä on kirjautunut järjestelmään, näkyvät hänellä seuraavat linkit navigointipalkissa.-->
 
 
-                         <li><a href="index.php">Etusivu</a></li>
-
-
+                        <li><a href="index.php">Etusivu</a></li>
 
 
 
                         <?php if (($sessio->tunniste == 'spoffilainen')) { ?>
+                            <li><a href="linkkeja.php">Linkkejä</a></li>
+                            
                             <!--                            <li><a href="lajiprofiili.php">Lajiprofiili</a>
                                                             <ul>
                                                                 <li><a href="lajiprofiilinlisaaminen.php">Lisääminen</a></li>
@@ -69,11 +69,11 @@ siirtynyt kyseiselle sivulle. Tästä ominaisuudesta vastataan JavaScript-koodin
                                                                 <li><a href="arvionmuokkaus.php">Muokkaaminen</a></li>
                                                             </ul>
                                                         </li>-->
-                            
+
 
                         <?php } ?>
 
-                            <li><a href="kirjaudu.php?ulos">Uloskirjautuminen</a></li>
+                        <li><a href="kirjaudu.php?ulos">Uloskirjautuminen</a></li>
                     <?php } ?>
 
                 </ul>
