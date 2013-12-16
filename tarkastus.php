@@ -1,7 +1,33 @@
+<!-- Tarkastustiedosto, joka tarkastaa, onko käyttäjä kirjautunut järjestelmään. 
+Tiedoston avulla luodaan jokaiselle sessiolle myös oma sessio kutsumalla sessio.php:tä.
+Lisäksi tarkastuksen avulla määritellään kyselijä, joka suorittaa tarvittavia tietokantakyselyita.
+-->
+
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+require_once 'apuphpt/kyselyja.php';
+require_once 'apuphpt/sessio.php';
+
+function ohjaa($osoite) {
+    header("Location: $osoite");
+    exit;
+}
+
+function on_kirjautunut() {
+    global $sessio;
+    return isset($sessio->tunniste);
+}
+
+function ei_kirjautunut() {
+    global $sessio;
+    return isset($sessio->tunniste);
+}
+
+
+function varmista_kirjautuminen() {
+    if (!on_kirjautunut()) {
+        ohjaa('kirjautuminen/sisaankirjaus.php');
+    }
+}
+
 ?>

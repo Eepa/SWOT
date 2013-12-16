@@ -4,7 +4,8 @@ CREATE TABLE -LAUSEET
 \\Taulu jarjestelman kayttajasta.
 
 CREATE TABLE spofkayttaja (
+	tunniste             VARCHAR(30) NOT NULL,         -- kayttajan tunniste
 	kayttajanimi         VARCHAR(30) NOT NULL UNIQUE,  -- kayttajan kayttajanimi
 	salasana             VARCHAR(30),                  -- kayttajan salasana
-	PRIMARY KEY (kayttajanimi)
+	PRIMARY KEY (tunniste)
 );
