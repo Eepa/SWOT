@@ -11,9 +11,9 @@ root {
 }
 
 body {
-    background-color:#EAECDB ;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    color: #25280D;
+    background-color:#F5F5F5;
+    font-family: "ITC Garamond Narrow",   serif;
+    color: #0D1A29;
 
     margin: 0px;
 }
@@ -26,27 +26,28 @@ body {
 }
 
 header {
-    background-color:#D1D5B7 ;
-    padding: 4px;
-    margin-bottom: 50px;   
+    background-color:#AAAEAE;
+    padding: 8px;
+    margin-bottom: 60px;   
     margin-right:50px;
     margin-left:0px;
-    margin-top: 25px;
-    box-shadow: inset 0px 3px 8px rgba(0,0,0,0.126);
+    margin-top: 30px;
+    box-shadow: inset 3px 4px 9px rgba(0,0,0,0.126);
 }
 
 h2{
     margin-left: 45px;
+    font-size: 27px;
 }
 
 p{
     margin-left: 45px;
     
-    font-size: 20px;
+    font-size: 21px;
 }
 
 footer {
-    background-color:#D1D5B7 ;
+    background-color:#B9D7D7 ;
     margin-top:70px;
     margin-right:50px;
     margin-left:0px;
@@ -56,11 +57,14 @@ footer {
 .otsikko {
     text-decoration: overline;
     margin-left: 45px;
+    font-size: 40px;
 }
 
 div {
-    margin-left: 80px;
+   margin-left: 80px;
+   
 }
+
 
 
 #tummennettu {
@@ -80,21 +84,22 @@ div {
 }
 
 a:link {
-    color: #667305;
+    color: #044E73;
 }
 
 a:visited {
-    color: #733403;
+    color: #570473;
 }
 
 #navbar {
     position: absolute;
     top: 0;
     left: 30px;
-    margin-top: 6px;
+    
     padding:0;
     margin-left: 90px;
-    margin-top: 23px;
+    margin-top: 30px;
+    font-size: 21px;
 }
 
 #navbar li {
@@ -106,7 +111,7 @@ a:visited {
 #navbar li a {
     display: block;
     text-align:center;
-    padding: 6px 8px;
+    padding: 5px 7px;
     text-transform: uppercase;
     text-decoration: none; 
     color: #000;
@@ -114,11 +119,12 @@ a:visited {
 }
 
 #navbar li a:hover {
-    background-color:#98bf21;
+    background-color:#838383;
+    box-shadow: inset 3px 4px 9px rgba(0,0,0,0.126);
 }
 
 #navbar li a.valittu {
-    color:#999 ;
+    color:#5F5F65 ;
 }
 
 #navbar li ul {
@@ -132,7 +138,7 @@ a:visited {
     left: 0;
     margin: 0;
     padding: 0;
-    background-color: #D1D5B7; 
+    background-color: #A5AEC5; 
     box-shadow: inset 0px 3px 8px rgba(0,0,0,0.126);
 }
 

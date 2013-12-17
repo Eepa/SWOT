@@ -1,5 +1,5 @@
 <!--Järjestelmänkirjautumissivu, jonka kirjautumattomat käyttäjät pääsevät näkemään.
-Sivun avulla käyttäjä voi syöttää järjestelmään salasanansa ja käyttäjätunnuksensa ja 
+Sivun avulla käyttäjä voi syöttää järjestelmään salasanansa ja käyttäjänimensä ja 
 kirjautua sivustolle.-->
 <?php
 require_once 'tarkastus.php';

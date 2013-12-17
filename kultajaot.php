@@ -10,7 +10,7 @@ varmista_kirjautuminen();
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="tyylitiedostot/tyylit.css" />
-
+        <title>Kultajaot</title>
     </head>
     <body>
         <div>
@@ -22,6 +22,7 @@ varmista_kirjautuminen();
             </p>
 
         </div>
+        
         <iframe 
             src="https://skydrive.live.com/embed?cid=FE6AB3DBB2A7093D&resid=FE6AB3DBB2A7093D%21523&authkey=AIcPleD1AqtYegc&em=2" 
             width="1885" 

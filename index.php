@@ -1,4 +1,5 @@
-
+<!--Swot-sivuston etusivu. Käyttäjä pääsee näkemään eri asioita riippuen siitä, onko hän kirjautunut järjestelmään vai ei. 
+-->
 
 <?php
 require_once 'tarkastus.php';
@@ -17,10 +18,7 @@ require_once 'tarkastus.php';
 
         <div>
             <h1 class="otsikko">Tervetuloa!</h1>
-
-
         </div>
-
 
 
         <?php if (!ei_kirjautunut()) { ?>
