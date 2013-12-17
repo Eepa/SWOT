@@ -1,4 +1,6 @@
-<?php require_once 'tarkastus.php'; ?>
+<?php require_once 'tarkastus.php'; 
+varmista_kirjautuminen();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -11,6 +13,7 @@
     </head>
     <body>
         <?php require 'linkkilista.php'; ?>
-        <h1 class="otsikko">Linkkejä</h1>
-
+        <div>
+            <h1 class="otsikko">Linkkejä</h1>
+        </div>
     </body>

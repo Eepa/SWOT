@@ -48,6 +48,8 @@ siirtynyt kyseiselle sivulle. Tästä ominaisuudesta vastataan JavaScript-koodin
                         <?php if (($sessio->tunniste == 'spoffilainen')) { ?>
                             <li><a href="linkkeja.php">Linkkejä</a></li>
                             
+                            
+                            <li><a href="kultajaot.php">Kultajaot</a></li>
                             <!--                            <li><a href="lajiprofiili.php">Lajiprofiili</a>
                                                             <ul>
                                                                 <li><a href="lajiprofiilinlisaaminen.php">Lisääminen</a></li>

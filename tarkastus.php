@@ -26,7 +26,7 @@ function ei_kirjautunut() {
 
 function varmista_kirjautuminen() {
     if (!on_kirjautunut()) {
-        ohjaa('kirjautuminen/sisaankirjaus.php');
+        ohjaa('sisaankirjaus.php');
     }
 }
 

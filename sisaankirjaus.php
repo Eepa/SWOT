@@ -6,36 +6,28 @@ require_once 'tarkastus.php';
 ?>
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="../tyylitiedostot/tyylit.css" />
         <title>Sisäänkirjautuminen</title>
 
     </head>
-
     <body>
         <?php require 'linkkilista.php'; ?>
-        <h1 class="otsikko">Sisäänkirjautuminen - Swot</h1>
 
-        <!--Sisäänkirjautumislomake, johon käyttäjä syöttää tarvittavat tiedot.-->
-
-        <div> 
+        <div>
+            <h1 class="otsikko">Sisäänkirjautuminen - Swot</h1>
             <h2>Syötä käyttäjänimesi ja salasanasi:</h2>
-
             <form action="kirjaudu.php?sis" method="POST">
 
-
-
                 <fieldset class="kirjautuminenfieldset" id="sisaankirjaus">
-
                     <?php if (isset($_GET['epao'])) { ?> 
                         <p id="virhe">
                             <?php
                             echo 'Salasana tai käyttäjätunnus oli väärä';
                         }
-                        ?> </p>
-
-
+                        ?>
                     <table >
                         <tr>
                             <td><label class="kirjautuminenlabel" for="kayttajanimi">Käyttäjänimi:</label></td>
@@ -50,15 +42,14 @@ require_once 'tarkastus.php';
                         <tr>
                             <td><input class="kirjnappula" type="submit" value="Kirjaudu"></td>
                         </tr>
-
+                    </table>
 
                 </fieldset>
-
             </form>
         </div>
 
-
-
     </body>
+
+
 
 </html>
