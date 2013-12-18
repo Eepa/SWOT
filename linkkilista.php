@@ -42,35 +42,15 @@ siirtynyt kyseiselle sivulle. Tästä ominaisuudesta vastataan JavaScript-koodin
 
 
                         <li><a href="index.php">Etusivu</a></li>
+                        
+                        <li><a href="linkkeja.php">Linkkejä</a></li>
 
-
-
+                        <!--Jos käyttäjä on spoffilainen niin hän näkee lisäksi seuraavat sivut.-->
                         <?php if (($sessio->tunniste == 'spoffilainen')) { ?>
-                            <li><a href="linkkeja.php">Linkkejä</a></li>
-                            
-                            
+
+
+
                             <li><a href="kultajaot.php">Kultajaot</a></li>
-                            <!--                            <li><a href="lajiprofiili.php">Lajiprofiili</a>
-                                                            <ul>
-                                                                <li><a href="lajiprofiilinlisaaminen.php">Lisääminen</a></li>
-                                                                <li><a href="lajiprofiilinpoistaminen.php">Poistaminen</a></li>
-                                                                <li><a href="lajiprofiilinmuokkaaminen.php">Muokkaaminen</a></li>
-                                                            </ul>
-                                                        </li>-->
-                            <!--                            <li><a href="harjoituskerta.php">Harjoituskerta</a>
-                                                            <ul>
-                                                                <li><a href="harjoituskerranlisaaminen.php">Lisääminen</a></li>
-                                                                <li><a href="harjoituskerranpoistaminen.php">Poistaminen</a></li>
-                                                                <li><a href="harjoituskerranmuokkaaminen.php">Muokkaaminen</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a href="arvio.php">Arvio</a>
-                                                            <ul>
-                                                                <li><a href="arvionlisaaminen.php">Lisääminen</a></li>
-                                                                <li><a href="arvionpoistaminen.php">Poistaminen</a></li>
-                                                                <li><a href="arvionmuokkaus.php">Muokkaaminen</a></li>
-                                                            </ul>
-                                                        </li>-->
 
 
                         <?php } ?>

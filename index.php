@@ -57,6 +57,23 @@ require_once 'tarkastus.php';
 
                 </div>
             <?php } ?>
+
+            <?php if (($sessio->tunniste == 'spuffilainen')) { ?>
+
+                <div>
+                    <br>
+                    <h2>Olet kirjautunut sisään käyttäjänä: Spuffilainen</h2>
+
+                    <p>
+
+                        Näiltä sivuilta löydät tietoa klaanin asioista.
+                        <br>
+                        Lisäksi sivuilta löytyy kokoelma hyödyllisiä linkkejä.
+
+                    </p>
+
+                </div>
+            <?php } ?>
         <?php } ?>
 
 
