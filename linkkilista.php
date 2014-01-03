@@ -42,15 +42,20 @@ siirtynyt kyseiselle sivulle. Tästä ominaisuudesta vastataan JavaScript-koodin
 
 
                         <li><a href="index.php">Etusivu</a></li>
-                        
+
                         <li><a href="linkkeja.php">Linkkejä</a></li>
 
                         <!--Jos käyttäjä on spoffilainen niin hän näkee lisäksi seuraavat sivut.-->
                         <?php if (($sessio->tunniste == 'spoffilainen')) { ?>
 
+                            <li><a href="#">Kultajaot</a>
+                                <ul>
+                                    <li><a href="kultajaot.php">Normaali</a></li>
+                                    <li><a href="kultajaotsort.php">Järjestetty</a></li>
+                                </ul>
+                            </li>
 
 
-                            <li><a href="kultajaot.php">Kultajaot</a></li>
 
 
                         <?php } ?>
